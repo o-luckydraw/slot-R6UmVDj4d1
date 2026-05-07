@@ -184,9 +184,16 @@ const DrawPage: React.FC = () => {
                 <button
                   onClick={draw}
                   disabled={!authInitialized || !isAdmin || isDrawing}
-                  className="w-full h-10 bg-primary text-primary-text rounded-btn font-bold text-sm shadow-sm hover:opacity-90 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed tracking-wide"
+                  aria-label={isDrawing ? 'DRAWING...' : 'DRAW!'}
+                  className="block hover:opacity-90 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isDrawing ? 'DRAWING...' : 'DRAW!'}
+                  <img
+                    src="/btn.png"
+                    alt={isDrawing ? 'DRAWING...' : 'DRAW!'}
+                    width={94}
+                    height={82}
+                    className="w-[94px] h-[82px] block"
+                  />
                 </button>
               </>
             )}
