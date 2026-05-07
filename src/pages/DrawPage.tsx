@@ -188,7 +188,7 @@ const DrawPage: React.FC = () => {
                   className="block hover:opacity-90 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <img
-                    src="/btn.png"
+                    src="./btn.png"
                     alt={isDrawing ? 'DRAWING...' : 'DRAW!'}
                     width={94}
                     height={82}
